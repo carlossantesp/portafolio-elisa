@@ -2,7 +2,6 @@
   background: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
   min-height: 100vh;
   display: grid;
-  grid-template-areas: "header" "main" "footer";
   grid-template-rows: auto 1fr auto;
   gap: 1rem;
 }
