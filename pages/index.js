@@ -1,12 +1,9 @@
-import Head from "next/head";
+import Layout from "../components/Layout";
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Portafolio web - Elisa</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-    </div>
+    <Layout>
+      <h2>Home</h2>
+    </Layout>
   );
 }
