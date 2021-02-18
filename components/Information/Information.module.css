@@ -1,0 +1,45 @@
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2.5rem 0;
+}
+.infoDescripcion,
+.infoProjectos {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.infoProjectos,
+.infoLink {
+  margin-top: 1.5rem;
+}
+.infoProjectos {
+  font-weight: var(--fontBold);
+}
+.infoLink svg {
+  width: 5rem;
+  height: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .info {
+    margin: 5rem 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .info {
+    margin: 6.25rem 0;
+  }
+  .infoDescripcion {
+    font-size: 2.125rem;
+    line-height: 3.5rem;
+    font-weight: var(--fontAccent);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info {
+    margin: 12.5rem 0;
+  }
+}
