@@ -32,6 +32,10 @@ a {
   box-sizing: border-box;
 }
 
+svg{
+  fill: currentColor;
+}
+
 .btn{
   background-color: transparent;
   box-shadow: -4px 4px 14px rgba(0,0,0,.25);

@@ -1,0 +1,64 @@
+.footer {
+  display: grid;
+  grid-template-areas: "sociales" "copy";
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.logo {
+  grid-area: logo;
+  display: none;
+  font-family: var(--fontLogo);
+  font-weight: var(--logoBold);
+  font-style: 1.5rem;
+}
+.copy{
+  grid-area: copy;
+  margin: 0;
+  text-align: center;
+}
+.copy span{
+  display: block;
+}
+.redesSociales {
+  grid-area: sociales;
+}
+.social{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialItem{
+  margin: 0 0.5rem;
+  border: 2px solid var(--color-text);
+  background-color: var(--color-primary);
+  border-radius: 0.25rem;
+}
+.socialLink{
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 992px){
+  .footer{
+    grid-template-areas: "logo copy sociales";
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 1rem;
+  }
+  .logo {
+    display: block;
+  }
+  .copy span{
+    display: inline;
+  }
+  .social{
+    align-items: flex-end;
+  }
+  .socialItem:last-child{
+    margin-right: 0;
+  }
+}
