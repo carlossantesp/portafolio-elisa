@@ -15,32 +15,32 @@ export const data = {
   ],
   proyectos: [
     {
-      name: "leonidasestebab.com",
+      name: "leonidasesteban.com",
       description:
         "Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.",
       url: "https://leonidasestebab.com",
       repo: "https://github.com",
-      image: "/public/images/proyectos/proyecto1.png",
+      image: "/images/proyectos/proyecto1.png",
       testimonial: {
         name: "LEONIDAS ESTEBAN",
         title: "COFUNDADOR Y CEO LEONIDASESTEBAN.COM",
-        image: "/public/images/testimonials/user1.png",
-        descripcion:
+        image: "/images/testimonials/user1.png",
+        description:
           "Elisa ha sido de gran ayuda para acelerar ciertos esfuerzos de desarrollo. Lo que nos hubiera llevado 6 meses solo les llevó 1,5 meses.",
       },
     },
     {
-      name: "marvol",
+      name: "MARVOL",
       description:
         "Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de televisión, videos y más oficiales de Marvol.",
       url: "https://marvol.com",
       repo: "https://github.com",
-      image: "/public/images/proyectos/proyecto2.png",
+      image: "/images/proyectos/proyecto2.png",
       testimonial: {
         name: "JASON LOPEZ",
         title: "COFUNDADOR Y CEO MARVOL",
-        image: "/public/images/testimonials/user2.png",
-        descripcion:
+        image: "/images/testimonials/user2.png",
+        description:
           "Elisa ha superado mis expectativas desde el diseño hasta el desarrollo.",
       },
     },
@@ -50,12 +50,12 @@ export const data = {
         "Películas y series ilimitadas y mucho más. Disfruta donde quieras. Cancela cuando quieras.",
       url: "https://netnet.com",
       repo: "https://github.com",
-      image: "/public/images/proyectos/proyecto3.png",
+      image: "/images/proyectos/proyecto3.png",
       testimonial: {
         name: "MARCO CORTEZ",
         title: "NETNET",
-        image: "/public/images/testimonials/user3.png",
-        descripcion:
+        image: "/images/testimonials/user3.png",
+        description:
           "Por primera vez en la historia de nuestra empresa, aparecimos en todas las plataformas en las que trabajamos.",
       },
     },

@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import Information from "../components/Information";
 import Layout from "../components/Layout";
+import Listaproyectos from "../components/Listaproyectos";
 import { data } from "../data/info";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         imageMe={data.image}
       />
       <Information info={data.info} />
+      <Listaproyectos proyectos={data.proyectos} />
     </Layout>
   );
 }
