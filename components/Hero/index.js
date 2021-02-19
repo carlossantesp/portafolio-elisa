@@ -4,30 +4,27 @@ import Phone from "../../icons/phone";
 import Email from "../../icons/email";
 import styles from "./Hero.module.css";
 
-export default function Hero() {
+export default function Hero({ name, description, phone, email, imageMe }) {
   return (
     <section className={styles.hero}>
       <div className={styles.heroInformation}>
         <span className={styles.heroSay}>¡Hola a todos!</span>
-        <h1 className={styles.heroTitle}>Soy Elisa</h1>
-        <p className={styles.heroInfo}>
-          Una Frontend Developer que le encanta implementar diseños que inspiran
-          y atraen a las personas.
-        </p>
+        <h1 className={styles.heroTitle}>Soy {name}</h1>
+        <p className={styles.heroInfo}>{description}</p>
         <ul className={styles.heroList}>
           <li className={styles.heroItem}>
-            <Link href="/">
-              <a className={styles.heroLink}>
+            <Link href={`https://api.whatsapp.com/send?phone=${phone}`}>
+              <a className={styles.heroLink} target="_blank">
                 <Phone />
-                (629) 555-0129
+                {phone}
               </a>
             </Link>
           </li>
           <li className={styles.heroItem}>
-            <Link href="/">
-              <a className={styles.heroLink}>
+            <Link href={`mailto:${email}`}>
+              <a className={styles.heroLink} target="_blank">
                 <Email />
-                elisa@gmail.com
+                {email}
               </a>
             </Link>
           </li>
@@ -50,12 +47,7 @@ export default function Hero() {
             height={398}
           />
         </div>
-        <Image
-          src="/images/me.png"
-          alt="Foto de Elisa"
-          width={500}
-          height={398}
-        />
+        <Image src={imageMe} alt={`Foto de ${name}`} width={500} height={398} />
       </div>
     </section>
   );
