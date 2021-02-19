@@ -13,6 +13,7 @@
   --color-text: #0f0a0a;
   --color-accent: rgba(15, 10, 10, 0.5);
   --color-primary: #42e2b8;
+  --color-secondary: transparent;
 }
 
 html,
@@ -35,19 +36,4 @@ a {
 
 svg {
   fill: currentColor;
-}
-
-.btn {
-  background-color: transparent;
-  box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
-  text-transform: uppercase;
-  font-weight: var(--fontBold);
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: 3rem;
-  border: 2px solid var(--color-text);
-  cursor: pointer;
-}
-.btn-primary {
-  background-color: var(--color-primary);
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Boton from "../Boton";
 import styles from "../Navbar/Navbar.module.css";
 
 export default function Navbar() {
@@ -29,9 +30,9 @@ export default function Navbar() {
         </ul>
       </nav>
       <div className={styles.curriculum}>
-        <Link href="/">
-          <a className="btn btn-primary">CURRÍCULUM</a>
-        </Link>
+        <Boton dir="/" primary={true} tipo="link">
+          CURRÍCULUM
+        </Boton>
       </div>
     </header>
   );
