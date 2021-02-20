@@ -18,7 +18,7 @@ export const data = {
       name: "leonidasesteban.com",
       description:
         "Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.",
-      url: "https://leonidasestebab.com",
+      url: "https://leonidasesteban.com",
       repo: "https://github.com",
       image: "/images/proyectos/proyecto1.png",
       testimonial: {
@@ -33,7 +33,7 @@ export const data = {
       name: "MARVOL",
       description:
         "Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de televisión, videos y más oficiales de Marvol.",
-      url: "https://marvol.com",
+      url: "https://marvel.com",
       repo: "https://github.com",
       image: "/images/proyectos/proyecto2.png",
       testimonial: {
@@ -48,7 +48,7 @@ export const data = {
       name: "NETNET",
       description:
         "Películas y series ilimitadas y mucho más. Disfruta donde quieras. Cancela cuando quieras.",
-      url: "https://netnet.com",
+      url: "https://netflix.com",
       repo: "https://github.com",
       image: "/images/proyectos/proyecto3.png",
       testimonial: {

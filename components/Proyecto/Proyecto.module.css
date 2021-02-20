@@ -4,16 +4,17 @@
 }
 .proyecto {
   grid-template-areas: "proyecto" "testimonial";
-  gap: 2rem;
 }
 .wrapper {
   grid-area: proyecto;
   grid-template-areas: "image" "info";
+  padding: 2.5rem 0;
 }
 .info {
   grid-area: info;
 }
 .title {
+  font-size: 1.5rem;
   display: inline-block;
   color: var(--color-primary);
   background-color: var(--color-text);
@@ -63,6 +64,9 @@
 }
 
 @media screen and (min-width: 992px) {
+  .title {
+    font-size: 2.125rem;
+  }
   .proyecto:nth-child(2n) .wrapper {
     grid-template-areas: "image image info";
   }
@@ -70,6 +74,7 @@
     grid-template-areas: "info image image";
     align-items: center;
     gap: 2rem;
+    padding: 5rem 0;
   }
   .enlaces {
     justify-content: flex-start;

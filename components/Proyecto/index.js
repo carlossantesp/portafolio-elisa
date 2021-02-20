@@ -1,6 +1,6 @@
 import Boton from "../Boton";
 import Github from "../../icons/github";
-// import Testimonial from "../Testimonial";
+import Testimonial from "../Testimonial";
 import styles from "./Proyecto.module.css";
 
 export default function Proyecto({ proyecto }) {
@@ -24,7 +24,7 @@ export default function Proyecto({ proyecto }) {
           <img src={image} alt={name} />
         </div>
       </article>
-      {/* <Testimonial testimonial={testimonial} /> */}
+      <Testimonial testimonial={testimonial} />
     </section>
   );
 }
