@@ -1,4 +1,5 @@
 .logo {
+  cursor: pointer;
   font-family: var(--fontLogo);
   font-weight: var(--logoBold);
   font-style: 1.5rem;

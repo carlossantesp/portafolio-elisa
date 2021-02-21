@@ -13,4 +13,9 @@
   font-size: 0.875rem;
   text-transform: uppercase;
   color: var(--color-accent);
+  cursor: pointer;
+}
+.menuLink:hover,
+.active {
+  color: var(--color-text);
 }

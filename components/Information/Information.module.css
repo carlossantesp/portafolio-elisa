@@ -24,6 +24,7 @@
   height: 5rem;
 }
 .infoLink {
+  cursor: pointer;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-name: bounce;
