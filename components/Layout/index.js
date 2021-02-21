@@ -4,10 +4,12 @@ import Footer from "../Footer";
 import styles from "./Layout.module.css";
 
 export default function Layout({ children, redes }) {
+  const title = "Portafolio web - Elisa";
+
   return (
     <>
       <Head>
-        <title>Portafolio web - Elisa</title>
+        <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.wrapper}>
