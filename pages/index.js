@@ -1,3 +1,4 @@
+import Contacto from "../components/Contacto";
 import Hero from "../components/Hero";
 import Information from "../components/Information";
 import Layout from "../components/Layout";
@@ -16,6 +17,7 @@ export default function Home() {
       />
       <Information info={data.info} />
       <Listaproyectos proyectos={data.proyectos} />
+      <Contacto />
     </Layout>
   );
 }
