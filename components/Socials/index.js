@@ -17,7 +17,7 @@ export default function Socials({ redes }) {
       {redes.map((social, index) => (
         <li key={index} className={styles.item}>
           <Link href={social.url}>
-            <a className={styles.link}>
+            <a className={styles.link} target="_blank" role="link">
               {redesEnables.find((red) => red.name === social.name).component}
             </a>
           </Link>
