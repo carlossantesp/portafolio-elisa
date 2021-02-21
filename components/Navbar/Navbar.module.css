@@ -1,51 +1,16 @@
-.header{
-  display: grid;
-  grid-template-areas: "logo curriculum";
-  grid-template-columns: auto;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-.logo {
-  grid-area: logo;
-  font-family: var(--fontLogo);
-  font-weight: var(--logoBold);
-  font-style: 1.5rem;
-}
-.nav{
-  grid-area: menu;
-  display: none;
-}
-.menu{
+.menu {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
 }
-.menuItem{
+.menuItem {
   padding: 0.5rem 1rem;
   margin: 0 1rem;
 }
-.menuLink{
+.menuLink {
   font-weight: var(--fontBold);
   font-size: 0.875rem;
   text-transform: uppercase;
   color: var(--color-accent);
-}
-.curriculum{
-  grid-area: curriculum;
-  font-size: 0.8rem;
-}
-
-@media screen and (min-width: 768px){
-  .header{
-    margin-top: 0.5rem;
-    grid-template-areas: "logo menu curriculum";
-    grid-template-columns: auto 1fr auto;
-    gap: 2rem;
-  }
-  .nav{
-    display: block;
-  }
 }

@@ -13,15 +13,6 @@
 .info {
   grid-area: info;
 }
-.title {
-  font-size: 1.5rem;
-  display: inline-block;
-  color: var(--color-primary);
-  background-color: var(--color-text);
-  box-shadow: -4px 4px 0 white;
-  padding: 0.5rem;
-  margin: 2.5rem 0 1rem 0;
-}
 .description {
   line-height: 1.6rem;
   margin-bottom: 1rem;
@@ -64,9 +55,6 @@
 }
 
 @media screen and (min-width: 992px) {
-  .title {
-    font-size: 2.125rem;
-  }
   .proyecto:nth-child(2n) .wrapper {
     grid-template-areas: "image image info";
   }

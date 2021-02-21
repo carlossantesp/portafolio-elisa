@@ -1,3 +1,4 @@
+import Title from "../Title";
 import Boton from "../Boton";
 import Github from "../../icons/github";
 import Testimonial from "../Testimonial";
@@ -9,7 +10,7 @@ export default function Proyecto({ proyecto }) {
     <section className={styles.proyecto}>
       <article className={styles.wrapper}>
         <div className={styles.info}>
-          <h2 className={styles.title}>{name}</h2>
+          <Title>{name}</Title>
           <p className={styles.description}>{description}</p>
           <div className={styles.enlaces}>
             <Boton dir={url} primary={true} tipo="link">

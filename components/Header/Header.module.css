@@ -1,0 +1,32 @@
+.header {
+  display: grid;
+  grid-template-areas: "logo curriculum";
+  grid-template-columns: auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.brand {
+  grid-area: logo;
+}
+.nav {
+  grid-area: menu;
+  display: none;
+}
+.curriculum {
+  grid-area: curriculum;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    margin-top: 0.5rem;
+    grid-template-areas: "logo menu curriculum";
+    grid-template-columns: auto 1fr auto;
+    gap: 2rem;
+  }
+  .nav {
+    display: block;
+  }
+}

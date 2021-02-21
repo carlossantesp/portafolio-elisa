@@ -5,60 +5,32 @@
   justify-content: center;
   gap: 0.5rem;
 }
-.logo {
-  grid-area: logo;
+.brand {
   display: none;
-  font-family: var(--fontLogo);
-  font-weight: var(--logoBold);
-  font-style: 1.5rem;
 }
-.copy{
+.copy {
   grid-area: copy;
   margin: 0;
   text-align: center;
 }
-.copy span{
+.copy span {
   display: block;
 }
-.redesSociales {
+.redes {
   grid-area: sociales;
 }
-.social{
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.socialItem{
-  margin: 0 0.5rem;
-  border: 2px solid var(--color-text);
-  background-color: var(--color-primary);
-  border-radius: 0.25rem;
-}
-.socialLink{
-  width: 2.75rem;
-  height: 2.75rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-@media screen and (min-width: 992px){
-  .footer{
+@media screen and (min-width: 992px) {
+  .footer {
     grid-template-areas: "logo copy sociales";
     grid-template-columns: 1fr 4fr 1fr;
     gap: 1rem;
   }
-  .logo {
+  .brand {
+    grid-area: logo;
     display: block;
   }
-  .copy span{
+  .copy span {
     display: inline;
-  }
-  .social{
-    align-items: flex-end;
-  }
-  .socialItem:last-child{
-    margin-right: 0;
   }
 }

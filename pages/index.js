@@ -6,7 +6,7 @@ import { data } from "../data/info";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout redes={data.redes}>
       <Hero
         name={data.name}
         description={data.description}

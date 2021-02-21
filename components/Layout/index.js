@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Navbar from "../Navbar";
+import Header from "../Header";
 import Footer from "../Footer";
 import styles from "./Layout.module.css";
 
-export default function Layout({ children }) {
+export default function Layout({ children, redes }) {
   return (
     <>
       <Head>
@@ -12,11 +12,11 @@ export default function Layout({ children }) {
       </Head>
       <div className={styles.wrapper}>
         <div className={styles.container}>
-          <Navbar />
+          <Header />
         </div>
         <main className={styles.container}>{children}</main>
         <div className={styles.container}>
-          <Footer />
+          <Footer redes={redes} />
         </div>
       </div>
     </>
