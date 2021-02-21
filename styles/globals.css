@@ -39,3 +39,7 @@ a {
 svg {
   fill: currentColor;
 }
+img {
+  width: 100%;
+  display: block;
+}

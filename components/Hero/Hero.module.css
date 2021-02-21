@@ -47,6 +47,9 @@
   position: relative;
   margin: 0 auto;
 }
+.heroImagen > img {
+  position: relative;
+}
 .heroBox {
   position: absolute;
   top: 0;

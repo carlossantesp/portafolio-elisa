@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import Phone from "../../icons/phone";
 import Email from "../../icons/email";
 import styles from "./Hero.module.css";
@@ -32,22 +31,12 @@ export default function Hero({ name, description, phone, email, imageMe }) {
       </div>
       <div className={styles.heroImagen}>
         <div className={styles.heroBox}>
-          <Image
-            src="/images/box-1.png"
-            alt="Box green"
-            width={500}
-            height={398}
-          />
+          <img src="/images/box-1.png" alt="Box green" />
         </div>
         <div className={styles.heroBox}>
-          <Image
-            src="/images/box-2.png"
-            alt="Box purple"
-            width={500}
-            height={398}
-          />
+          <img src="/images/box-2.png" alt="Box purple" />
         </div>
-        <Image src={imageMe} alt={`Foto de ${name}`} width={500} height={398} />
+        <img src={imageMe} alt={`Foto de ${name}`} />
       </div>
     </section>
   );
