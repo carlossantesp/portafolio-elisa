@@ -8,7 +8,7 @@ export const data = {
   phone: "(629) 555-0129",
   email: "elisa@gmail.com",
   redes: [
-    { name: "phone", url: "https://https://web.whatsapp.com" },
+    { name: "phone", url: "https://web.whatsapp.com" },
     { name: "email", url: "mailto:elisa@gmail.com" },
     { name: "instagram", url: "https://instagram.com" },
     { name: "twitter", url: "https://twitter.com" },
