@@ -11,6 +11,7 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 13px;
+  transition: background 0.25s;
 }
 .btn > svg {
   margin-right: 0.5rem;
@@ -18,6 +19,12 @@
 .btnPrimary {
   background-color: var(--color-primary);
 }
+.btnPrimary:hover {
+  background-color: var(--color-primary-hover);
+}
 .btnSecondary {
   background-color: var(--color-secondary);
+}
+.btnSecondary:hover {
+  background-color: var(--color-secondary-hover);
 }

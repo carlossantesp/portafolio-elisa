@@ -23,6 +23,25 @@
   width: 5rem;
   height: 5rem;
 }
+.infoLink {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .info {
     margin: 5rem 0;

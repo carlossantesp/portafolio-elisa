@@ -13,7 +13,9 @@
   --color-text: #0f0a0a;
   --color-accent: rgba(15, 10, 10, 0.5);
   --color-primary: #42e2b8;
+  --color-primary-hover: #3dd3ab;
   --color-secondary: transparent;
+  --color-secondary-hover: rgba(255, 255, 255, 0.2);
 }
 
 html,

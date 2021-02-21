@@ -11,6 +11,7 @@ export default function Boton({ children, tipo, primary, dir }) {
               primary ? styles.btnPrimary : styles.btnSecondary
             }`}
             role="link"
+            target="_blank"
           >
             {children}
           </a>
