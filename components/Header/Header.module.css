@@ -18,6 +18,9 @@
   grid-area: curriculum;
   font-size: 0.8rem;
 }
+.curriculum span {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
   .header {
@@ -28,5 +31,11 @@
   }
   .nav {
     display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .curriculum span {
+    display: inline-block;
+    margin-right: 0.25rem;
   }
 }

@@ -59,22 +59,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
-  .hero::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    transform: translateX(-50%);
-    width: 25rem;
-    height: 25rem;
-    background: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(191, 53, 142, 0.5) 0%,
-      rgba(191, 53, 142, 0) 100%
-    );
-    backdrop-filter: blur(199px);
-  }
 }
 
 @media screen and (min-width: 1200px) {
