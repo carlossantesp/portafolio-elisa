@@ -19,8 +19,8 @@ const menuItems = [
 export default function Navbar() {
   return (
     <ul className={styles.menu}>
-      {menuItems.map((item) => (
-        <li className={styles.menuItem}>
+      {menuItems.map((item, index) => (
+        <li className={styles.menuItem} key={index}>
           <Link
             to={item.path}
             spy={true}
