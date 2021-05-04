@@ -9,6 +9,11 @@
   --fontBold: 700;
 
   --sizeBase: 16px;
+  --sizeSmall: 0.875rem;
+  --sizeH2: 3.6875rem;
+  --sizeH3: 3rem;
+  --sizeH4: 2.125rem;
+  --sizeH5: 1.5rem;
 
   --color-text: #0f0a0a;
   --color-accent: rgba(15, 10, 10, 0.5);
@@ -16,6 +21,18 @@
   --color-primary-hover: #3dd3ab;
   --color-secondary: transparent;
   --color-secondary-hover: rgba(255, 255, 255, 0.2);
+
+  --shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
+
+  --gradient-color-1: #fad7a1;
+  --gradient-color-2: #e96d71;
+  --radial-color1: #bf358e;
+  --radial-color2: #bf358e;
+  --radial-color3: #28eae8;
+  --radial-color4: #28eae8;
+}
+* {
+  box-sizing: border-box;
 }
 
 html,
@@ -25,15 +42,12 @@ body {
   font-family: var(--fontPrimary);
   font-weight: var(--fontNormal);
   color: var(--color-text);
+  line-height: 1.5;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 svg {

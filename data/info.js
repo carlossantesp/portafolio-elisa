@@ -4,7 +4,7 @@ export const data = {
     "Una Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.",
   info:
     "A lo largo de mi carrera como Frontend, he tenido el privilegio de trabajar en proyectos retadores e increíbles",
-  image: "/images/me.png",
+  image: "/images/person.png",
   phone: "(629) 555-0129",
   email: "elisa@gmail.com",
   redes: [
