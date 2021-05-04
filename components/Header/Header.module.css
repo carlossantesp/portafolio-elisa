@@ -1,33 +1,35 @@
 .header {
-  display: grid;
-  grid-template-areas: "logo curriculum";
-  grid-template-columns: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header > div {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
 }
-.brand {
-  grid-area: logo;
-}
-.nav {
-  grid-area: menu;
+.nav,
+.curriculum span {
   display: none;
 }
 .curriculum {
-  grid-area: curriculum;
-  font-size: 0.8rem;
-}
-.curriculum span {
-  display: none;
+  font-size: var(--sizeSmall);
 }
 
 @media screen and (min-width: 768px) {
   .header {
-    margin-top: 0.5rem;
     grid-template-areas: "logo menu curriculum";
     grid-template-columns: auto 1fr auto;
-    gap: 2rem;
+  }
+  .brand {
+    grid-area: logo;
+  }
+  .nav {
+    grid-area: menu;
+  }
+  .curriculum {
+    grid-area: curriculum;
   }
   .nav {
     display: block;

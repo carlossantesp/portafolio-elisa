@@ -3,21 +3,20 @@ import Header from "../Header";
 import Footer from "../Footer";
 import styles from "./Layout.module.css";
 
-export default function Layout({ children, redes }) {
-  const title = "Portafolio web - Elisa";
+const title = "Portafolio web - Elisa";
 
+export default function Layout({ children, redes }) {
   return (
     <>
       <Head>
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <div className={styles.wrapper}>
-        <div className={styles.container}>
-          <Header />
-        </div>
-        <main className={styles.container}>{children}</main>
-        <div className={styles.container}>
+        <Header />
+        <div className="container">
+          <main className={styles.main}>{children}</main>
           <Footer redes={redes} />
         </div>
       </div>

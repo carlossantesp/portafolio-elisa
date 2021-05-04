@@ -6,16 +6,18 @@ import styles from "./Header.module.css";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.brand}>
-        <Logo />
-      </div>
-      <nav className={styles.nav}>
-        <Navbar />
-      </nav>
-      <div className={styles.curriculum}>
-        <Boton dir="/" primary={true} tipo="link">
-          <span>DESCARGAR</span> CURRÍCULUM
-        </Boton>
+      <div className="container">
+        <div className={styles.brand}>
+          <Logo />
+        </div>
+        <nav className={styles.nav}>
+          <Navbar />
+        </nav>
+        <div className={styles.curriculum}>
+          <Boton dir="/" primary={true} tipo="link">
+            <span>DESCARGAR</span> CURRÍCULUM
+          </Boton>
+        </div>
       </div>
     </header>
   );
