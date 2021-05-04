@@ -1,16 +1,16 @@
 .menu {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  margin-right: 2rem;
   list-style: none;
 }
 .menuItem {
   padding: 0.5rem 1rem;
-  margin: 0 1rem;
+  margin-inline-start: 1rem;
 }
 .menuLink {
   font-weight: var(--fontBold);
-  font-size: 0.875rem;
+  font-size: var(--sizeSmall);
   text-transform: uppercase;
   color: var(--color-accent);
   cursor: pointer;
@@ -18,4 +18,9 @@
 .menuLink:hover,
 .active {
   color: var(--color-text);
+}
+@media (min-width: 1200px) {
+  .menu {
+    margin-right: 9.5rem;
+  }
 }
