@@ -5,25 +5,24 @@
   flex-direction: column;
   margin: 2.5rem 0;
 }
-.infoDescripcion,
-.infoProjectos {
+.description,
+.more {
   margin: 0;
   text-align: center;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: var(--sizeH5);
 }
-.infoProjectos,
-.infoLink {
+.more,
+.link {
   margin-top: 1.5rem;
 }
-.infoProjectos {
+.more {
   font-weight: var(--fontBold);
 }
-.infoLink svg {
+.link svg {
   width: 5rem;
   height: 5rem;
 }
-.infoLink {
+.link {
   cursor: pointer;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -43,7 +42,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .info {
     margin: 5rem 0;
   }
@@ -52,9 +51,8 @@
   .info {
     margin: 6.25rem 0;
   }
-  .infoDescripcion {
-    font-size: 2.125rem;
-    line-height: 3.5rem;
+  .description {
+    font-size: var(--sizeH4);
     font-weight: var(--fontAccent);
   }
 }

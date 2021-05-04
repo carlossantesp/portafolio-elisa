@@ -5,10 +5,8 @@ import { Link } from "react-scroll";
 export default function Information({ info }) {
   return (
     <section id="hola" className={styles.info}>
-      <p className={styles.infoDescripcion}>{info}</p>
-      <p className={styles.infoProjectos}>
-        Aquí hay algunos que me gustaría compartir.
-      </p>
+      <p className={styles.description}>{info}</p>
+      <p className={styles.more}>Aquí hay algunos que me gustaría compartir.</p>
       <Link
         to="proyectos"
         spy={true}
@@ -16,7 +14,7 @@ export default function Information({ info }) {
         offset={-70}
         duration={500}
         exact="true"
-        className={styles.infoLink}
+        className={styles.link}
       >
         <ArrowDown />
       </Link>
