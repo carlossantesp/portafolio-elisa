@@ -31,3 +31,9 @@
 .btnSecondary:hover {
   background-color: var(--color-secondary-hover);
 }
+.btnIcon {
+  padding: 0.625rem !important;
+}
+.btnIcon > svg {
+  margin-right: 0;
+}

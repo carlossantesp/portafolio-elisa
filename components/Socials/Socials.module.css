@@ -1,33 +1,9 @@
 .social {
   list-style: none;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 0;
 }
 .item {
-  margin: 0 0.5rem;
-  border: 2px solid var(--color-text);
-  background-color: var(--color-primary);
-  border-radius: 0.25rem;
-  transition: background 0.25s;
-}
-.item:hover {
-  background-color: var(--color-primary-hover);
-}
-.link {
-  width: 2.75rem;
-  height: 2.75rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (min-width: 992px) {
-  .social {
-    align-items: flex-end;
-  }
-  .item:last-child {
-    margin-right: 0;
-  }
+  margin-inline-start: 0.5rem;
 }

@@ -22,6 +22,7 @@
 }
 .redes {
   grid-area: sociales;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 992px) {

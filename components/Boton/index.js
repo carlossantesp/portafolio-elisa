@@ -5,12 +5,14 @@ export default function Boton({
   children,
   tipo,
   primary,
-  rounded = true,
+  rounded = false,
   dir,
+  icon = false,
 }) {
   const stylesBtn = `${styles.btn} ${
     primary ? styles.btnPrimary : styles.btnSecondary
-  } ${rounded && styles.btnRounded}`;
+  } ${rounded && styles.btnRounded}
+  ${icon && styles.btnIcon}`;
   return (
     <>
       {tipo === "link" ? (

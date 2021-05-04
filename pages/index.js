@@ -14,6 +14,7 @@ export default function Home() {
         phone={data.phone}
         email={data.email}
         imageMe={data.image}
+        redes={data.redes}
       />
       <Information info={data.info} />
       <Listaproyectos proyectos={data.proyectos} />

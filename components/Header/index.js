@@ -14,7 +14,7 @@ export default function Header() {
           <Navbar />
         </nav>
         <div className={styles.curriculum}>
-          <Boton dir="/" primary={true} tipo="link">
+          <Boton dir="/" primary={true} tipo="link" rounded={true}>
             <span>DESCARGAR</span> CURRÍCULUM
           </Boton>
         </div>
