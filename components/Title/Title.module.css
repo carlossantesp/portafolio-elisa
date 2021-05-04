@@ -1,5 +1,5 @@
 .title {
-  font-size: 1.5rem;
+  font-size: var(--sizeH5);
   display: inline-block;
   color: var(--color-primary);
   background-color: var(--color-text);
@@ -9,6 +9,6 @@
 }
 @media screen and (min-width: 992px) {
   .title {
-    font-size: 2.125rem;
+    font-size: var(--sizeH4);
   }
 }

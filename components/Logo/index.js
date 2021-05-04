@@ -1,9 +1,9 @@
 import styles from "./Logo.module.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-export default function Logo() {
-  const nameLogo = "LOGO";
+const nameLogo = "LOGO";
 
+export default function Logo() {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
