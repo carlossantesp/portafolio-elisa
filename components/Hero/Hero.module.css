@@ -1,78 +1,46 @@
-.hero {
-  display: grid;
-  grid-template-areas: "imagen" "information";
+.hero,
+.information {
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
 }
-.heroInformation {
-  grid-area: information;
-}
-.heroSay,
-.heroTitle {
-  font-weight: var(--fontBold);
-}
-.heroSay {
-  font-size: 3rem;
-  line-height: 4.85rem;
-}
-.heroTitle {
-  font-size: 3.7rem;
-  line-height: 6rem;
-  margin: 0;
-}
-.heroInfo {
-  line-height: 1.5;
-}
-.heroList {
-  list-style: none;
-  padding: 0;
-}
-.heroInfo,
-.heroItem {
-  margin: 1rem 0;
-}
-.heroItem {
-  display: block;
-}
-.heroLink {
-  display: flex;
-  align-items: center;
-  font-weight: var(--fontBold);
-  text-decoration: underline;
-}
-.heroLink svg {
-  margin-right: 1rem;
-}
-.heroImagen {
-  grid-area: imagen;
-  position: relative;
+.image {
   margin: 0 auto;
 }
-.heroImagen > img {
-  position: relative;
+.say,
+.title {
+  font-weight: var(--fontBold);
 }
-.heroBox {
-  position: absolute;
-  top: 0;
-  left: 0;
+.say {
+  font-size: var(--sizeH3);
+}
+.title {
+  font-size: var(--sizeH2);
+  margin: 0;
+}
+.description {
+  margin: 1rem 0;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+  }
+  .image {
+    order: 2;
+  }
+}
 @media screen and (min-width: 992px) {
   .hero {
-    grid-template-areas: "information imagen";
-    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    gap: 2rem;
+  .image {
+    margin-top: -2rem;
   }
 }
-
-@media screen and (min-width: 1400px) {
-  .hero::before {
-    width: 30rem;
-    height: 30rem;
+@media (min-width: 1200px) {
+  .hero {
+    gap: 2rem;
   }
 }
