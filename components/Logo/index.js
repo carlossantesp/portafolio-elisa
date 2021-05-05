@@ -1,7 +1,7 @@
 import styles from "./Logo.module.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-const nameLogo = "LOGO";
+const nameLogo = "ELISA";
 
 export default function Logo() {
   const toggleHome = () => {
