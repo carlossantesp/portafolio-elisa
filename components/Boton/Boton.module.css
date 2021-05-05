@@ -33,6 +33,7 @@
 }
 .btnIcon {
   padding: 0.625rem !important;
+  box-shadow: none;
 }
 .btnIcon > svg {
   margin-right: 0;

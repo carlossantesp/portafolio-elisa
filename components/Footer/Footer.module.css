@@ -1,7 +1,6 @@
 .footer {
-  display: grid;
-  grid-template-areas: "sociales" "copy";
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
 }
@@ -9,7 +8,6 @@
   display: none;
 }
 .copy {
-  grid-area: copy;
   margin: 0;
   text-align: center;
 }
@@ -21,18 +19,33 @@
   display: block;
 }
 .redes {
-  grid-area: sociales;
+  order: -1;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: initial;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .copy {
+    text-align: left;
+  }
+  .redes {
+    order: initial;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .footer {
-    grid-template-areas: "logo copy sociales";
-    grid-template-columns: 1fr 4fr 1fr;
     gap: 1rem;
   }
+  .copy {
+    flex: 1;
+    text-align: center;
+  }
   .brand {
-    grid-area: logo;
     display: block;
   }
   .copy span {
