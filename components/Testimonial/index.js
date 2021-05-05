@@ -3,7 +3,7 @@ import styles from "./Testimonial.module.css";
 export default function Testimonial({ testimonial }) {
   const { name, description, title, image } = testimonial;
   return (
-    <article className={styles.testimonial}>
+    <div className={styles.testimonial}>
       <div className={styles.gradient}>
         <div className={styles.wrapper}>
           <div className={styles.image}>
@@ -15,6 +15,6 @@ export default function Testimonial({ testimonial }) {
           </p>
         </div>
       </div>
-    </article>
+    </div>
   );
 }

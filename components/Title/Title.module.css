@@ -5,7 +5,8 @@
   background-color: var(--color-text);
   box-shadow: -4px 4px 0 white;
   padding: 0.5rem;
-  margin: 2.5rem 0 1rem 0;
+  margin: 0;
+  margin-inline-start: 4px;
 }
 @media screen and (min-width: 992px) {
   .title {

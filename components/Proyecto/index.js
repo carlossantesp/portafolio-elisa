@@ -7,25 +7,25 @@ import styles from "./Proyecto.module.css";
 export default function Proyecto({ proyecto }) {
   const { name, description, url, repo, image, testimonial } = proyecto;
   return (
-    <section className={styles.proyecto}>
-      <article className={styles.wrapper}>
-        <div className={styles.info}>
+    <article className={styles.wrapper}>
+      <div className={styles.proyecto}>
+        <div className={styles.image}>
+          <img src={image} alt={name} />
+        </div>
+        <div className={styles.information}>
           <Title>{name}</Title>
           <p className={styles.description}>{description}</p>
-          <div className={styles.enlaces}>
-            <Boton dir={url} primary={true} tipo="link">
+          <div className={styles.links}>
+            <Boton dir={url} primary={true} tipo="link" rounded={true}>
               Ver Proyecto
             </Boton>
-            <Boton dir={repo} tipo="link">
+            <Boton dir={repo} tipo="link" rounded={true}>
               <Github /> Ver Código
             </Boton>
           </div>
         </div>
-        <div className={styles.image}>
-          <img src={image} alt={name} />
-        </div>
-      </article>
+      </div>
       <Testimonial testimonial={testimonial} />
-    </section>
+    </article>
   );
 }
