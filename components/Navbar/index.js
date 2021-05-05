@@ -25,7 +25,7 @@ export default function Navbar() {
             to={item.path}
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-100}
             duration={500}
             exact="true"
             activeClass={styles.active}
