@@ -1,60 +1,59 @@
 .testimonial {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 2.5rem 0;
 }
-.gradient {
-  background: radial-gradient(
-    circle 15rem at top left,
-    rgba(255, 255, 255, 0.75) -10%,
-    rgba(255, 255, 255, 0.2) 10%,
-    transparent
-  );
-  padding: 0.25rem;
-  border-radius: 1rem;
-}
-.wrapper {
+
+.box {
+  border: 1px solid black;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 1.5rem;
-  padding: 2rem 1.25rem;
-  border-radius: 1rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0.25rem;
+
+  border: 6px solid transparent;
+  border-radius: 1.5rem;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    radial-gradient(
+      ellipse at top left,
+      rgba(255, 255, 255, 0.75) -150%,
+      rgba(255, 255, 255, 0) 50%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 .image {
   width: 4rem;
   height: 4rem;
   margin: 0 auto;
 }
-.description {
-  font-weight: var(--fontBold);
-  line-height: 1.5rem;
-  margin: 0;
-}
+.description,
 .title {
   margin: 0;
-  font-weight: var(--fontAccent);
+}
+.description {
+  font-weight: var(--fontBold);
+}
+.title {
   color: var(--color-accent);
-  font-size: 0.75rem;
+  font-size: var(--sizeSmaller);
 }
 
 @media screen and (min-width: 992px) {
   .testimonial {
     padding: 5rem 0;
   }
-  .wrapper {
+  .box {
     text-align: center;
+    padding: 5rem;
   }
   .description {
-    font-size: 2.125rem;
-    line-height: 3.4rem;
+    font-size: var(--sizeH4);
   }
   .title {
-    font-size: 1.5rem;
-    line-height: 2.3rem;
+    font-size: var(--sizeH5);
+    font-weight: var(--fontBold);
   }
   .image {
     width: 5rem;

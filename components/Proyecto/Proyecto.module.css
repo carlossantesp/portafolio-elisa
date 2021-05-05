@@ -5,6 +5,9 @@
 .image {
   margin-bottom: 1.5rem;
 }
+.image img {
+  margin: 0 auto;
+}
 .description {
   margin-bottom: 1rem;
 }
@@ -35,9 +38,6 @@
   }
   .image {
     margin-bottom: 0;
-  }
-  .image img {
-    margin: 0 auto;
   }
 }
 
