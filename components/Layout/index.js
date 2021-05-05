@@ -11,6 +11,19 @@ export default function Layout({ children, redes }) {
       <Head>
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Una Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas."
+        />
+        <meta name="image" content="/images/page.png" />
+        <meta property="og:title" content="Elisa - Frontend Developer" />
+        <meta
+          property="og:description"
+          content="Una Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas."
+        />
+        <meta property="og:image" content="/images/page.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Elisa - Frontend Developer" />
       </Head>
 
       <div className={styles.wrapper}>
