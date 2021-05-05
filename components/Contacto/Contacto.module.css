@@ -3,33 +3,37 @@
   max-width: 38rem;
 }
 .description {
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
   margin: 0;
-  line-height: 1.625rem;
 }
 .form {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
-.group {
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem 0;
+.label,
+.label > span {
+  font-weight: var(--fontBold);
 }
 .label {
-  font-weight: var(--fontBold);
-  margin-bottom: 0.5rem;
-  padding-left: 1rem;
+  display: inline-block;
+  padding-block-end: 0.5rem;
+  padding-inline-start: 1rem;
 }
 .label > span {
   color: #da1414;
-  font-weight: var(--fontBold);
 }
 .control {
+  width: 100%;
   font-size: 1rem;
   padding: 0.75rem 1rem;
   border: none;
+  appearance: none;
   border-radius: 0.5rem;
+}
+.group button {
+  width: 100%;
 }
 
 @media screen and (min-width: 992px) {
@@ -42,8 +46,6 @@
   }
   .description {
     text-align: center;
-  }
-  .group {
-    padding: 1rem 0;
+    padding-block-end: 1.5rem;
   }
 }

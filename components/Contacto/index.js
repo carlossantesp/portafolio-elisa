@@ -46,7 +46,7 @@ export default function Contacto() {
           ></textarea>
         </div>
         <div className={styles.group}>
-          <Boton tipo="button" primary={true}>
+          <Boton tipo="button" primary={true} rounded={true}>
             ENVIAR MENSAJE
           </Boton>
         </div>
